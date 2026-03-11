@@ -1,0 +1,203 @@
+<div class="product-list-container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: #1a2946ff;">
+
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" style="cursor:pointer;">
+        <i class="fas fa-store me-2"></i>E-Commerce Store
+      </a> 
+
+      <!-- Right Side -->
+      <ul class="navbar-nav ms-auto align-items-center">
+        <!-- Cart -->
+        <li class="nav-item me-3 position-relative">
+          <button class="nav-link text-white btn btn-light position-relative" (click)="goToCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span *ngIf="cartItemCount > 0" 
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {{ cartItemCount }}
+            </span>
+          </button>
+        </li>
+
+        <!-- Orders -->
+        <li class="nav-item me-2">
+          <button class="nav-link text-white" (click)="goToOrders()">
+            <i class="fas fa-history me-2"></i>My 
+            Orders
+          </button>
+        </li>
+
+        <!-- User Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user-circle me-2"></i>Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li><a class="dropdown-item" (click)="goToCart()">
+              <i class="fas fa-shopping-cart me-2"></i>My Cart
+            </a></li>
+            <li><a class="dropdown-item" (click)="goToOrders()">
+              <i class="fas fa-history me-2"></i>Order History
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" (click)="logout()">
+              <i class="fas fa-sign-out-alt me-2"></i>Logout
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Alerts -->
+  <div class="container mt-3">
+    <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show">
+      <i class="fas fa-check-circle me-2"></i>{{ successMessage }}
+      <button type="button" class="btn-close" (click)="successMessage = ''"></button>
+    </div>
+    <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show">
+      <i class="fas fa-exclamation-circle me-2"></i>{{ errorMessage }}
+      <button type="button" class="btn-close" (click)="errorMessage = ''"></button>
+    </div>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="container my-5">
+    <h2 class="mb-4 fw-bold">
+      <i class="fas fa-shopping-bag me-2 text-secondary"></i>Products
+    </h2>
+
+    <div class="row g-4">
+      <!-- Product Card -->
+      <div *ngFor="let product of products" class="col-md-4 col-lg-3">
+        <div class="card h-100 shadow-sm border-0 product-card" 
+             [class.sold-out]="product.isSoldOut">
+          
+          <!-- Product Image -->
+          <div class="position-relative">
+            <img [src]="product.photoUrl || 'https://via.placeholder.com/300'" 
+                 [alt]="product.productName"
+                 class="card-img-top" 
+                 style="height:220px; object-fit:cover;">
+            
+            <!-- Sold Out -->
+            <div *ngIf="product.isSoldOut" class="sold-out-overlay">
+              <span class="badge bg-danger fs-6">SOLD OUT</span>
+            </div>
+
+            <!-- Badges -->
+            <div class="position-absolute top-0 start-0 m-2">
+              <span *ngIf="product.soldCount > 0" class="badge bg-success">
+                <i class="fas fa-fire me-1"></i>{{ product.soldCount }} sold
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Body -->
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">{{ product.productName }}</h5>
+            
+            <!-- Categories -->
+            <div class="mb-2">
+              <span *ngFor="let cat of product.categories" class="badge bg-secondary me-1">
+                {{ cat }}
+              </span>
+            </div>
+
+            <!-- Rating -->
+            <div class="rating-display mb-2">
+              <span *ngFor="let star of getStarArray(product.averageRating)" 
+                    [class]="star ? 'fas fa-star text-warning' : 'far fa-star text-muted'">
+              </span>
+              <small class="text-muted ms-2">
+                ({{ product.totalRatings }} {{ product.totalRatings === 1 ? 'review' : 'reviews' }})
+              </small>
+            </div>
+
+            <!-- Price & Stock -->
+            <div class="price-section mb-3">
+              <h4 class="text-primary mb-0">${{ product.price | number:'1.2-2' }}</h4>
+              <small class="text-muted">Stock: {{ product.quantity }}</small>
+            </div>
+
+            <!-- Actions -->
+            <div class="mt-auto">
+              <button class="btn btn-outline-secondary w-100 mb-2" 
+                      (click)="addToCart(product)"
+                      [disabled]="product.isSoldOut || addingToCart[product.productId]">
+                <ng-container *ngIf="!addingToCart[product.productId]">
+                  <i class="fas fa-cart-plus me-2"></i>
+                  {{ product.isSoldOut ? 'Sold Out' : 'Add to Cart' }}
+                </ng-container>
+                <ng-container *ngIf="addingToCart[product.productId]">
+                  <span class="spinner-border spinner-border-sm me-2"></span> Adding...
+                </ng-container>
+              </button>
+              <button class="btn btn-outline-warning w-100" 
+                      (click)="openRatingModal(product)">
+                <i class="fas fa-star me-2"></i>Rate Product
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty State -->
+      <div *ngIf="products.length === 0" class="col-12 text-center py-5">
+        <i class="fas fa-inbox fa-5x text-muted mb-3"></i>
+        <h4 class="text-muted">No products available</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating Modal -->
+  <div *ngIf="selectedProduct" class="modal fade show d-block" tabindex="-1" 
+       style="background-color: rgba(0,0,0,0.5);">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow">
+        
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">
+            <i class="fas fa-star text-warning me-2"></i>
+            Rate {{ selectedProduct.productName }}
+          </h5>
+          <button type="button" class="btn-close" (click)="closeRatingModal()"></button>
+        </div>
+
+        <div class="modal-body">
+          <!-- Rating Stars -->
+          <div class="text-center mb-3">
+            <div class="rating-stars">
+              <span *ngFor="let i of [1,2,3,4,5]" 
+                    (click)="setRating(i)"
+                    [class]="i <= selectedRating 
+                              ? 'fas fa-star text-warning star-clickable' 
+                              : 'far fa-star text-muted star-clickable'">
+              </span>
+            </div>
+            <p class="mt-2">{{ selectedRating > 0 ? selectedRating + ' star(s)' : 'Click to rate' }}</p>
+          </div>
+
+          <!-- Review -->
+          <div class="mb-3">
+            <label class="form-label fw-bold">Review (Optional)</label>
+            <textarea class="form-control" rows="3" [(ngModel)]="ratingReview"
+                      placeholder="Share your experience..."></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="closeRatingModal()">Cancel</button>
+          <button type="button" class="btn btn-primary" (click)="submitRating()" 
+                  [disabled]="selectedRating === 0">
+            <i class="fas fa-check me-2"></i>Submit Rating
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

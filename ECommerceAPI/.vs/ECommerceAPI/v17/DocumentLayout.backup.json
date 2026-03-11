@@ -1,0 +1,709 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\productrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\ecommerceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\ecommerceapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\productfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\productfilterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\data\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\data\\databaseseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\ratingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\profiles\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\repositories\\ratingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\repositories\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\ratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\ratingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\cartdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\productcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|e:\\bhavik\\e-commerce\\ecommerceapi\\ecommerceapi\\migrations\\20251001043051_fixseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F247938B-EE4B-409C-9AD6-2ABC309DA757}|ECommerceAPI\\ECommerceAPI.csproj|solutionrelative:ecommerceapi\\migrations\\20251001043051_fixseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FileUploadController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\FileUploadController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\FileUploadController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\FileUploadController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T05:18:35.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductRating.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\ProductRating.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\ProductRating.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\ProductRating.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\ProductRating.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:54:18.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\OrdersController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:16:56.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\OrderDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\OrderDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\OrderDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\OrderDto.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA9wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:03:19.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\OrderService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\OrderService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\OrderService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:18:54.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ECommerceAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:04:20.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:13:18.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Program.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Program.cs",
+              "RelativeToolTip": "ECommerceAPI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:18:10.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\CartController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\CartController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\CartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:16:09.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\ProductService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\ProductService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\ProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:18:02.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\ProductDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\ProductDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\ProductDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\ProductDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:58:55.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Repositories\\ProductRepository.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "ECommerceAPI\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:14:17.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ECommerceAPI\\appsettings.json",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\appsettings.json",
+              "RelativeToolTip": "ECommerceAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-01T04:18:36.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ECommerceAPI.csproj",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
+              "RelativeDocumentMoniker": "ECommerceAPI\\ECommerceAPI.csproj",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\ECommerceAPI.csproj",
+              "RelativeToolTip": "ECommerceAPI\\ECommerceAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T12:14:05.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\AuthService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\AuthService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\AuthService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAUwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:17:09.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductFilterDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\ProductFilterDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\ProductFilterDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\ProductFilterDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\ProductFilterDto.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T04:48:05.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAAHgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:13:44.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RegisterDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\RegisterDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\RegisterDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\RegisterDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\RegisterDto.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T08:39:10.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DatabaseSeeder.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Data\\DatabaseSeeder.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Data\\DatabaseSeeder.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Data\\DatabaseSeeder.cs",
+              "RelativeToolTip": "ECommerceAPI\\Data\\DatabaseSeeder.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwAcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:40:19.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ECommerceAPI\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAzwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:16:37.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20251001043051_FixSeedData.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Migrations\\20251001043051_FixSeedData.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Migrations\\20251001043051_FixSeedData.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Migrations\\20251001043051_FixSeedData.cs",
+              "RelativeToolTip": "ECommerceAPI\\Migrations\\20251001043051_FixSeedData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:30:52.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RatingsController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\RatingsController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\RatingsController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\RatingsController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\RatingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:17:40.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Controllers\\CategoriesController.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "ECommerceAPI\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:14:10.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RatingService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\RatingService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\RatingService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\RatingService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\RatingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-01T04:12:29.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RatingRepository.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\RatingRepository.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Repositories\\RatingRepository.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\RatingRepository.cs",
+              "RelativeToolTip": "ECommerceAPI\\Repositories\\RatingRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:16:14.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Profiles\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Profiles\\MappingProfile.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Profiles\\MappingProfile.cs",
+              "RelativeToolTip": "ECommerceAPI\\Profiles\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:06:30.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CartService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\CartService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\CartService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\CartService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\CartService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:18:26.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Services\\JwtService.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Services\\JwtService.cs",
+              "RelativeToolTip": "ECommerceAPI\\Services\\JwtService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:13:16.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Repositories\\OrderRepository.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "ECommerceAPI\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:15:41.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CartRepository.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\CartRepository.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Repositories\\CartRepository.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Repositories\\CartRepository.cs",
+              "RelativeToolTip": "ECommerceAPI\\Repositories\\CartRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:15:07.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Settings\\JwtSettings.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "ECommerceAPI\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:11:03.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "RatingDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\RatingDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\RatingDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\RatingDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\RatingDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:03:43.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CartDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\CartDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\CartDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\CartDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\CartDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:02:52.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\CategoryDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\CategoryDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T12:02:22.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\LoginResponseDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginResponseDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:58:26.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginDto.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\DTOs\\LoginDto.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\DTOs\\LoginDto.cs",
+              "RelativeToolTip": "ECommerceAPI\\DTOs\\LoginDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAkwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:58:00.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\OrderItem.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\OrderItem.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:53:56.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Order.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\Order.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Order.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:53:32.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\CartItem.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\CartItem.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:52:57.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\User.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\User.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\User.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAIwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:52:32.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ProductCategory.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\ProductCategory.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\ProductCategory.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\ProductCategory.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\ProductCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:51:58.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\Product.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Product.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:51:32.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "ECommerceAPI\\Models\\Category.cs",
+              "ToolTip": "E:\\Bhavik\\E-Commerce\\ECommerceAPI\\ECommerceAPI\\Models\\Category.cs",
+              "RelativeToolTip": "ECommerceAPI\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:50:55.525Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+<div class="order-history-container">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: #1a2946ff;">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" (click)="continueShopping()" style="cursor:pointer;">
+        <i class="fas fa-store me-2"></i>E-Commerce
+      </a>
+
+      <!-- Right side -->
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item me-2">
+          <button class="btn btn-outline-light" (click)="goToCart()">
+            <i class="fas fa-shopping-cart me-2"></i>Cart
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" 
+             data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-user-circle me-2"></i>Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow">
+            <li><a class="dropdown-item" (click)="continueShopping()">
+              <i class="fas fa-shopping-bag me-2"></i>Shop More
+            </a></li>
+            <li><a class="dropdown-item" (click)="goToCart()">
+              <i class="fas fa-shopping-cart me-2"></i>My Cart
+            </a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item text-danger" (click)="logout()">
+              <i class="fas fa-sign-out-alt me-2"></i>Logout
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container my-5">
+
+    <h2 class="mb-4 fw-bold">
+      <i class="fas fa-history me-2 text-secondary"></i>My Orders
+    </h2>
+
+    <!-- Error -->
+    <div *ngIf="errorMessage" class="alert alert-danger">
+      <i class="fas fa-exclamation-circle me-2"></i>{{ errorMessage }}
+    </div>
+
+    <!-- Loading -->
+    <div *ngIf="loading" class="text-center py-5">
+      <div class="spinner-border text-primary" role="status"></div>
+      <p class="mt-3">Fetching your orders...</p>
+    </div>
+
+    <!-- Empty Orders -->
+    <div *ngIf="!loading && orders.length === 0" class="text-center py-5">
+      <i class="fas fa-box-open fa-5x text-muted mb-3"></i>
+      <h4 class="text-muted">No orders found</h4>
+      <button class="btn btn-primary mt-3" (click)="continueShopping()">
+        <i class="fas fa-shopping-bag me-2"></i>Start Shopping
+      </button>
+    </div>
+
+    <!-- Orders List -->
+    <div *ngFor="let order of orders" class="card mb-4 shadow-sm border-0">
+      <div class="card-header bg-light d-flex flex-wrap justify-content-between align-items-center">
+        <div>
+          <strong>Order #{{ order.orderId }}</strong><br>
+          <small class="text-muted">{{ order.orderDate | date:'medium' }}</small>
+        </div>
+        <div>
+          <span class="badge bg-success me-3">{{ order.orderStatus }}</span>
+          <span class="fw-bold text-primary">${{ order.totalAmount | number:'1.2-2' }}</span>
+        </div>
+        <button class="btn btn-sm btn-outline-secondary" (click)="toggleOrderDetails(order.orderId)">
+          <i [ngClass]="isExpanded(order.orderId) ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"></i>
+          {{ isExpanded(order.orderId) ? 'Hide' : 'Show' }} Details
+        </button>
+      </div>
+
+      <!-- Order Items -->
+      <div *ngIf="isExpanded(order.orderId)" class="card-body">
+        <h6 class="fw-bold mb-3">
+          <i class="fas fa-box me-2 text-secondary"></i>Items ({{ order.items.length }})
+        </h6>
+
+        <div class="table-responsive">
+          <table class="table table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Product</th>
+                <th>Image</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of order.items">
+                <td>{{ item.productName }}</td>
+                <td>
+                  <img [src]="item.photoUrl || 'https://via.placeholder.com/50'" 
+                       [alt]="item.productName" 
+                       class="img-thumbnail" style="width:50px; height:50px; object-fit:cover;">
+                </td>
+                <td>{{ item.quantity }}</td>
+                <td>${{ item.price | number:'1.2-2' }}</td>
+                <td class="fw-bold">${{ item.subtotal | number:'1.2-2' }}</td>
+              </tr>
+              <tr *ngIf="order.items.length === 0">
+                <td colspan="5" class="text-center text-muted">No items in this order</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-light">
+                <td colspan="4" class="text-end fw-bold">Total:</td>
+                <td class="fw-bold text-primary">${{ order.totalAmount | number:'1.2-2' }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

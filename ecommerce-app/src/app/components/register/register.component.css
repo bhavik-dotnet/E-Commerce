@@ -1,0 +1,38 @@
+.register-container {
+  background: linear-gradient(135deg, #288ea7 0%, #20c997 100%);
+  min-height: 100vh;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #7ea788 0%, #20c997 100%) !important;
+}
+
+.btn-success {
+  background: linear-gradient(135deg, #7ea788 0%, #20c997 100%);
+  border: none;
+  transition: transform 0.2s;
+}
+
+.btn-success:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(40, 167, 69, 0.4);
+}
+
+.form-control:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.btn-link {
+  color: #28a745;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  color: #20c997;
+}

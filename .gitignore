@@ -1,0 +1,50 @@
+# =============== #
+# .NET Core Ignore
+# =============== #
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.local.json
+*.config
+*.db
+*.log
+.vscode/
+.idea/
+*.swp
+*.lock.json
+
+# Entity Framework Migrations backup
+*MigrationsBackup*
+
+# Publish output
+/out/
+/publish/
+/wwwroot/lib/
+
+# =============== #
+# Angular Ignore
+# =============== #
+ecommerce-app/node_modules/
+ecommerce-app/dist/
+ecommerce-app/.angular/cache/
+ecommerce-app/.env
+ecommerce-app/.vscode/
+ecommerce-app/package-lock.json
+
+# =============== #
+# OS and Editor files
+# =============== #
+.DS_Store
+Thumbs.db
+desktop.ini
+*.bak
+*.tmp
+
+# =============== #
+# Environment files
+# =============== #
+.env
+.env.*

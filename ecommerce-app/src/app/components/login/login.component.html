@@ -1,0 +1,88 @@
+<div class="login-container">
+  <div class="container">
+    <div class="row justify-content-center align-items-center min-vh-100">
+      <div class="col-md-5">
+        <div class="card shadow-lg border-0 rounded-lg">
+          <div class="card-header bg-primary text-white text-center py-4">
+            <h3 class="mb-0">
+              <i class="fas fa-shopping-cart me-2"></i>
+              E-Commerce Login
+            </h3>
+          </div>
+          <div class="card-body p-5">
+            <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show" role="alert">
+              <i class="fas fa-exclamation-circle me-2"></i>
+              {{ errorMessage }}
+              <button type="button" class="btn-close" (click)="errorMessage = ''" aria-label="Close"></button>
+            </div>
+
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+              <div class="mb-4">
+                <label for="username" class="form-label fw-bold">
+                  <i class="fas fa-user me-2"></i>Username
+                </label>
+                <input 
+                  type="text" 
+                  class="form-control form-control-lg" 
+                  id="username" 
+                  formControlName="username"
+                  [class.is-invalid]="f['username'].invalid && f['username'].touched"
+                  placeholder="Enter username">
+                <div *ngIf="f['username'].invalid && f['username'].touched" class="invalid-feedback">
+                  Username is required
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label fw-bold">
+                  <i class="fas fa-lock me-2"></i>Password
+                </label>
+                <input 
+                  type="password" 
+                  class="form-control form-control-lg" 
+                  id="password" 
+                  formControlName="password"
+                  [class.is-invalid]="f['password'].invalid && f['password'].touched"
+                  placeholder="Enter password">
+                <div *ngIf="f['password'].invalid && f['password'].touched" class="invalid-feedback">
+                  Password is required
+                </div>
+              </div>
+
+              <div class="d-grid">
+                <button 
+                  type="submit" 
+                  class="btn btn-primary btn-lg" 
+                  [disabled]="loading || loginForm.invalid">
+                  <span *ngIf="!loading">
+                    <i class="fas fa-sign-in-alt me-2"></i>Login
+                  </span>
+                  <span *ngIf="loading">
+                    <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+                    Loading...
+                  </span>
+                </button>
+              </div>
+            </form>
+
+            <!-- <div class="mt-4 p-3 bg-light rounded">
+              <h6 class="text-muted mb-2">Test Credentials:</h6>
+              <small class="text-muted">
+                <strong>Admin:</strong> admin / admin123
+              </small>
+            </div> -->
+
+            <hr class="my-4">
+
+            <div class="text-center">
+              <p class="mb-0">Don't have an account?</p>
+              <a [routerLink]="['/register']" class="btn btn-link text-decoration-none">
+                <i class="fas fa-user-plus me-2"></i>Register Here
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

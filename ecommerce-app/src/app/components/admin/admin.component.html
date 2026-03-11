@@ -1,0 +1,269 @@
+<div class="admin-container">
+  <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: #1a2946ff;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-tools me-2"></i>Admin Panel
+      </a>
+      <div class="ms-auto">
+        <button class="btn btn-outline-light me-2" (click)="goToCustomerView()">
+          <i class="fas fa-shopping-bag me-2"></i>Customer View
+        </button>
+        <button class="btn btn-outline-danger" (click)="logout()">
+          <i class="fas fa-sign-out-alt me-2"></i>Logout
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Add/Edit Product Form -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <div class="card-header bg-secondary text-white">
+            <h5 class="mb-0">
+              <i [class]="isEditMode ? 'fas fa-edit' : 'fas fa-plus-circle'" class="me-2"></i>
+              {{ isEditMode ? 'Edit Product' : 'Add Product' }}
+            </h5>
+          </div>
+          <div class="card-body">
+            <div *ngIf="errorMessage" class="alert alert-danger alert-dismissible fade show">
+              {{ errorMessage }}
+              <button type="button" class="btn-close" (click)="errorMessage = ''"></button>
+            </div>
+            <div *ngIf="successMessage" class="alert alert-success alert-dismissible fade show">
+              {{ successMessage }}
+              <button type="button" class="btn-close" (click)="successMessage = ''"></button>
+            </div>
+
+            <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label class="form-label fw-bold">Product Name *</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  formControlName="productName"
+                  [class.is-invalid]="f['productName'].invalid && f['productName'].touched">
+                <div *ngIf="f['productName'].invalid && f['productName'].touched" class="invalid-feedback">
+                  Product name is required (max 200 characters)
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Product Image *</label>
+                
+                <!-- Upload Mode Toggle -->
+                <div class="btn-group w-100 mb-2" role="group">
+                  <button 
+                    type="button" 
+                    class="btn btn-sm"
+                    [class.btn-primary]="uploadMode === 'file'"
+                    [class.btn-outline-primary]="uploadMode !== 'file'"
+                    (click)="switchUploadMode('file')">
+                    <i class="fas fa-upload me-2"></i>Upload File
+                  </button>
+                  <button 
+                    type="button" 
+                    class="btn btn-sm"
+                    [class.btn-primary]="uploadMode === 'url'"
+                    [class.btn-outline-primary]="uploadMode !== 'url'"
+                    (click)="switchUploadMode('url')">
+                    <i class="fas fa-link me-2"></i>Image URL
+                  </button>
+                </div>
+
+                <!-- File Upload Mode -->
+                <div *ngIf="uploadMode === 'file'">
+                  <div class="upload-area" [class.has-file]="selectedFile">
+                    <input 
+                      type="file" 
+                      id="fileInput"
+                      #fileInput
+                      class="d-none" 
+                      accept="image/jpeg,image/jpg,image/png,image/gif,image/webp"
+                      (change)="onFileSelected($event)">
+                    
+                    <div *ngIf="!selectedFile" class="upload-placeholder" (click)="fileInput.click()">
+                      <i class="fas fa-cloud-upload-alt fa-3x text-muted mb-2"></i>
+                      <p class="text-muted mb-1">Click to upload or drag and drop</p>
+                      <small class="text-muted">JPG, PNG, GIF, WEBP (Max 5MB)</small>
+                    </div>
+
+                    <div *ngIf="selectedFile && imagePreview" class="image-preview-container">
+                      <img [src]="imagePreview" alt="Preview" class="image-preview">
+                      <button 
+                        type="button" 
+                        class="btn btn-sm btn-danger remove-image-btn"
+                        (click)="removeSelectedFile()">
+                        <i class="fas fa-times"></i>
+                      </button>
+                      <div class="file-info mt-2">
+                        <small class="text-muted">
+                          <i class="fas fa-file-image me-1"></i>
+                          {{ selectedFile.name }} ({{ (selectedFile.size / 1024).toFixed(2) }} KB)
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- URL Mode -->
+                <div *ngIf="uploadMode === 'url'">
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    formControlName="photoUrl"
+                    placeholder="https://example.com/image.jpg"
+                    [class.is-invalid]="f['photoUrl'].invalid && f['photoUrl'].touched">
+                  <div *ngIf="f['photoUrl'].invalid && f['photoUrl'].touched" class="invalid-feedback">
+                    Photo URL is required
+                  </div>
+                  
+                  <!-- URL Preview -->
+                  <div *ngIf="f['photoUrl'].value" class="mt-2">
+                    <img 
+                      [src]="f['photoUrl'].value" 
+                      alt="Preview" 
+                      class="img-thumbnail"
+                      style="max-height: 150px;"
+                      onerror="this.src='https://via.placeholder.com/150?text=Invalid+URL'">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Quantity *</label>
+                <select 
+                  class="form-select" 
+                  formControlName="quantity"
+                  [class.is-invalid]="f['quantity'].invalid && f['quantity'].touched">
+                  <option *ngFor="let num of [1,2,3,4,5,6,7,8,9,10]" [value]="num">{{ num }}</option>
+                </select>
+                <div *ngIf="f['quantity'].invalid && f['quantity'].touched" class="invalid-feedback">
+                  Quantity must be between 1 and 10
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Price *</label>
+                <input 
+                  type="number" 
+                  class="form-control" 
+                  formControlName="price"
+                  step="0.01"
+                  [class.is-invalid]="f['price'].invalid && f['price'].touched">
+                <div *ngIf="f['price'].invalid && f['price'].touched" class="invalid-feedback">
+                  Price must be greater than 0
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">Categories *</label>
+                <div class="category-checkboxes">
+                  <div *ngFor="let category of categories" class="form-check">
+                    <input 
+                      class="form-check-input" 
+                      type="checkbox" 
+                      [id]="'category-' + category.categoryId"
+                      [checked]="isCategorySelected(category.categoryId)"
+                      (change)="onCategoryChange(category.categoryId, $event)">
+                    <label class="form-check-label" [for]="'category-' + category.categoryId">
+                      {{ category.categoryName }}
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary" [disabled]="loading || uploadingFile">
+                  <span *ngIf="!loading && !uploadingFile">
+                    <i [class]="isEditMode ? 'fas fa-save' : 'fas fa-plus'" class="me-2"></i>
+                    {{ isEditMode ? 'Update Product' : 'Add Product' }}
+                  </span>
+                  <span *ngIf="loading || uploadingFile">
+                    <span class="spinner-border spinner-border-sm me-2"></span>
+                    {{ uploadingFile ? 'Uploading...' : 'Processing...' }}
+                  </span>
+                </button>
+                <button *ngIf="isEditMode" type="button" class="btn btn-secondary" (click)="resetForm()">
+                  <i class="fas fa-times me-2"></i>Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product List -->
+      <div class="col-md-8">
+        <div class="card shadow">
+          <div class="card-header bg-secondary text-white">
+            <h5 class="mb-0">
+              <i class="fas fa-list me-2"></i>Products ({{ products.length }})
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Categories</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Sold</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of products">
+                    <td>
+                      <img [src]="product.photoUrl" [alt]="product.productName" 
+                           class="product-thumbnail" onerror="this.src='https://via.placeholder.com/50'">
+                    </td>
+                    <td>{{ product.productName }}</td>
+                    <td>
+                      <span *ngFor="let cat of product.categories" class="badge bg-info me-1">
+                        {{ cat }}
+                      </span>
+                    </td>
+                    <td>
+                      <span [class.text-danger]="product.quantity === 0">
+                        {{ product.quantity }}
+                      </span>
+                    </td>
+                    <td>${{ product.price | number:'1.2-2' }}</td>
+                    <td>{{ product.soldCount }}</td>
+                    <td>
+                      <span class="text-warning">
+                        <i class="fas fa-star"></i> {{ product.averageRating | number:'1.1-1' }}
+                      </span>
+                      <small class="text-muted">({{ product.totalRatings }})</small>
+                    </td>
+                    <td>
+                      <button class="btn btn-sm btn-warning me-1" (click)="editProduct(product)">
+                        <i class="fas fa-edit"></i>
+                      </button>
+                      <button class="btn btn-sm btn-danger" (click)="deleteProduct(product.productId)">
+                        <i class="fas fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr *ngIf="products.length === 0">
+                    <td colspan="8" class="text-center text-muted py-4">
+                      <i class="fas fa-inbox fa-3x mb-3 d-block"></i>
+                      No products available
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
